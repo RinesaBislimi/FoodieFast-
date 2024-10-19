@@ -18,14 +18,13 @@ function Order() {
 
   // Calculate total price of items in the cart
   const totalPrice = cart.reduce((total, item) => total + item.price, 0).toFixed(2);
-  <Header />
+
   return (
     <>
-      
+        <Header />
       <div className="container order-page">
         <h2>Your Cart</h2>
 
-        {/* Cart Section */}
         <div className="cart-section mt-4">
           {cart.length === 0 ? (
             <div className="empty-cart">
@@ -49,9 +48,9 @@ function Order() {
           )}
         </div>
 
-        {/* Include Menu Component for Additional Products */}
+       
         <h3>Add More Products</h3>
-        <Menu addToCart={addToCart} /> {/* Pass addToCart function to Menu component */}
+        
       </div>
       <Footer/>
     </>

@@ -27,13 +27,13 @@ function Menu() {
     ? items
     : items.filter(item => item.category === selectedCategory);
 
-    <Header />
   return (
-    
-   
+  
+    <>
+       <Header />
       <div className="container-fluid">
         <div className="container menu-page">
-          {/* Filter Buttons */}
+        
           <div className="row my-3">
             <div className="col">
               <button
@@ -87,7 +87,7 @@ function Menu() {
         
       </div>
      
-    
+      </>
   );
  
 }

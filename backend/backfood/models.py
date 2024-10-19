@@ -17,6 +17,7 @@ class User(models.Model):
     password = models.CharField(max_length=255)
     phone = models.CharField(max_length=10, null=True)
     country = models.CharField(max_length=63, default="Unknown") 
+    is_admin = models.BooleanField(default=False)
 
     def __str__(self) -> str:
         return self.name

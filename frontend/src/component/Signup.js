@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import '../style/signup.css';
+import Footer from './Footer';
+import Header from './Header';
 
 function SignUp() {
     const [name, setName] = useState('');
@@ -37,6 +39,8 @@ function SignUp() {
     };
 
     return (
+        <>
+        <Header/>
         <div className="signup-container">
             <form className="signup-form" onSubmit={handleSubmit}>
                 <h2 className="signup-title">Sign Up</h2>
@@ -111,6 +115,9 @@ function SignUp() {
                 </p>
             </form>
         </div>
+        <Footer/>
+        </>
+       
     );
 }
 

@@ -160,8 +160,10 @@ class LoginView(APIView):
         email = request.data["email"]
         password = request.data["password"]
         hashed_password = make_password(password=password, salt=SALT)
-        user = User.objects.get(email=email)
-        if user is None or user.password != hashed_password:
+
+        try:
+            user = User.objects.get(email=email)
+        except User.DoesNotExist:
             return Response(
                 {
                     "success": False,
@@ -169,8 +171,23 @@ class LoginView(APIView):
                 },
                 status=status.HTTP_200_OK,
             )
-        else:
+
+       
+        if user.password != hashed_password:
             return Response(
-                {"success": True, "message": "You are now logged in!"},
+                {
+                    "success": False,
+                    "message": "Invalid Login Credentials!",
+                },
                 status=status.HTTP_200_OK,
             )
+        
+        return Response(
+            {
+                "success": True,
+                "message": "You are now logged in!",
+                "is_admin": user.is_admin  
+            },
+            status=status.HTTP_200_OK,
+        )
+

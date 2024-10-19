@@ -1,0 +1,61 @@
+.admin-header {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: black; /* Keep your background color */
+    transition: transform 0.3s ease;
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.navbar-nav {
+    padding-top: 20px; 
+}
+
+.nav-item-admin {
+    margin: 10px 0; 
+    color: aliceblue;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.nav-link-admin {
+    color: white !important; 
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.nav-link-admin:hover {
+    background-color: #757676; 
+}
+
+.admin-header-page {
+    background-color: rgb(194, 2, 2);
+    height: 100vh; /* Use full height for the background */
+}
+
+.navbar-toggler {
+    margin-left: auto; 
+}
+
+.navbar-collapse {
+    display: none; 
+}
+
+.navbar-collapse.show {
+    display: block; 
+}
+
+@media (max-width: 768px) { 
+    .admin-header {
+        width: 100%; /* Full width on small screens */
+        height: auto; /* Auto height */
+    }
+    .navbar-nav {
+        padding-top: 0; 
+    }
+}

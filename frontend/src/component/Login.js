@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { AuthContext } from './AuthContext';
 import '../style/login.css';
+import Footer from './Footer';
+import Header from './Header';
 
 function Login() {
     const [email, setEmail] = useState('');
@@ -20,17 +22,16 @@ function Login() {
                 email,
                 password,
             });
+            
 
             if (response.data.success) {
                 localStorage.setItem('userToken', response.data.token);
-                
-                // Removed storing the username in local storage
-                // localStorage.setItem('userName', response.data.username);
-                
-                // Only pass a signal to the AuthContext without username
                 login();
-
-                navigate('/');
+                if (response.data.is_admin === true) { 
+                    navigate("/admin/home");
+                } else {
+                    navigate('/');
+                }
             } else {
                 setErrorMessage(response.data.message);
             }
@@ -40,6 +41,8 @@ function Login() {
     };
 
     return (
+        <>
+        <Header/>
         <div className="login-container">
             <form className="login-form" onSubmit={handleSubmit}>
                 <h2 className="login-title">Login</h2>
@@ -77,6 +80,8 @@ function Login() {
                 </p>
             </form>
         </div>
+        <Footer/>
+        </>
     );
 }
 
