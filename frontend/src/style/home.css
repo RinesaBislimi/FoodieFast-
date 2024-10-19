@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.header {
+    background-color: rgb(193, 0, 0);
+    margin-top: 0;
+    border-radius: 0 0 50px 50px;
+}
+
+
+.navbar-brand {
+    margin-left: 50px;
+    font-weight: 800;
+    font-size: 40px;
+    font-family: cursive;
+    color: white !important;
+}
+
+.navbar-nav {
+    margin-left: auto; 
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: white !important; 
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 20px;
+}
+.navbar-nav img{
+    margin-top: 8px;
+}
+.navbar-toggler {
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    background-color: white; 
+}
+
+.header li:last-child {
+    margin-right: 100px; 
+}
+
+.home {
+    background-color: white;
+    padding: 20px;
+}
+
+.img-home {
+    max-height: 700px; 
+    width: 100%; 
+}
+
+.side1 {
+    text-align: left;
+    justify-content: left;
+    margin-top: 20px; 
+}
+
+.side1 h5 {
+    font-weight: 800;
+    text-align: left;
+    font-size: 32px; 
+}
+
+.btn-order {
+    padding: 10px 20px;
+    background-color: rgb(193, 0, 0);
+    color: white;
+    border: rgb(193, 0, 0); 
+    margin-top: 25px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn-order a{
+    color: white;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.btn-order:hover {
+    background-color: rgb(229, 0, 0);
+}
+
+@media (max-width: 768px) {
+    .side1 h5 {
+        font-size: 20px; 
+        text-align: center;
+    }
+
+    .btn-order {
+        margin-left: 0; 
+        width: 100%; 
+    }
+
+    .header li:last-child {
+        margin-right: 0; 
+    }
+    .navbar-nav img{
+        margin-left: 20px;
+        margin-bottom: 5px;
+    }
+}
+
+
+.menu{
+    background-color:rgb(193, 0, 0) ;
+    padding: 50px;
+}
+
+
+.menu .card-title{
+    color: rgb(193, 0, 0);
+    text-align: center;
+}
+
+.menu button {
+    background-color: rgb(201, 13, 13);
+    color: white;
+    font-weight: 400;
+    justify-content: center;
+    border: 1px solid rgb(193, 0, 0);
+    
+}
+
+.menu .check{
+    color: white;
+}
+.card {
+    justify-content: center;
+    text-align: center;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    padding: 5px;
+}
+
+
+.menu-title {
+    color: white;
+    font-size: 50px;
+    padding: 10px;
+    text-align: center;
+  
+    
+}
+
+.check:hover{
+    background-color: black;
+    color: white;
+    font-weight: 400;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu-more{
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+   
+}
+.see-more{
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid rgb(193, 0, 0);
+    color: rgb(193, 0, 0);
+    font-weight: 800;
+
+}
+
+.see-more a{
+    color: black;
+    text-decoration: none;
+}
+.see-more:hover{
+    background-color: white;
+    padding: 20px 30px 20px 30px;
+    border: 1px solid rgb(193, 0, 0);
+    color: rgb(18, 0, 0);
+    font-weight: 800;
+
+}
+
+
+.oferta {
+    background-color: #f8f9fa; 
+    padding: 50px 0;
+  }
+  
+  .oferta-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(193, 0, 0); 
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+ 
+  .carousel-indicators button {
+    background-color: #343a40; 
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  
+  .carousel-indicators .active {
+    background-color: #007bff; 
+  }
+  
+
+  .carousel-item img {
+    height: 600px; 
+    object-fit: cover; 
+  }
+  
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  .carousel-caption h5 {
+    font-size: 1.75rem;
+    color: #ffffff;
+  }
+  
+  .carousel-caption p {
+    color: #d1d1d1; 
+  }
+  
+ 
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #343a40; 
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+  }
+  
+  .carousel-control-prev:hover .carousel-control-prev-icon,
+  .carousel-control-next:hover .carousel-control-next-icon {
+    background-color: #007bff; 
+  }
+  
+  .map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  .map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
+footer{
+    background-color: rgb(193, 0, 0);
+}
+
+
+.menu img {
+    height: 350px; 
+}
+
+.modal-body {
+    display: flex; 
+}
+
+.modal-image {
+    flex: 1; 
+}
+
+.modal-details {
+    flex: 2;
+}
+
+.modal-footer {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+
+.modal {
+    border: 2px solid rgb(193, 0, 0);
+}
+
+
+
+/**/
+
+.user-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.user-button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 40px; 
+    right: 0;
+    border:2px solid red;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    border-radius: 4px;
+    z-index: 1000;
+    list-style: none;
+    min-width: 150px;
+    display: none;
+}
+
+
+.user-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 10px 16px;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: #fff;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.dropdown-item:hover {
+    background-color: #ea2d2d;
+    color:white;
+    
+}
+
+.dropdown-item:last-child {
+    border-bottom: none;
+}

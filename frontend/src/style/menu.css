@@ -1,0 +1,35 @@
+.menu-page .check{
+    color: white;
+}
+
+
+.menu-page button {
+    background-color: rgb(201, 13, 13);
+    color: white;
+    font-weight: 400;
+    justify-content: center;
+    border: 1px solid rgb(193, 0, 0);
+    
+}
+
+.menu-page img{
+    height: 350px;
+}
+
+.btn-hover{
+    background-color: black;
+    color:white;
+}
+
+.card button{
+    background-color: rgb(201, 13, 13);
+    color: white;
+    font-weight: 400;
+    justify-content: center;
+    border: 1px solid rgb(193, 0, 0);
+}
+
+.menu-items .card {
+    border: 1px solid black;
+    padding: 10px;
+}
